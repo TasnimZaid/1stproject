@@ -11,7 +11,7 @@ body{
 
     height: 100vh;
     width: 100%;
-    background-color: #08163b;
+    background-color: #02082f;
    
  
 
@@ -19,8 +19,8 @@ body{
 
 .body{
     width: 100%;
-    background-color: #fbfafb;
-    border-bottom:10px solid #000839;
+    background-color:#000839;
+    border-bottom:10px solid #d8950f;
 
     
 
@@ -35,7 +35,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: #000839;
+    color: #f8f8f8;
     font-size: 1rem;
 }
 
@@ -75,7 +75,7 @@ a:hover{
 
 }
 .action_btn{
-    background-color: #000839;
+    background-color: #d8950f;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -92,7 +92,7 @@ a:hover{
 
 .action_btn:hover{
     scale: 1.05;
-    color: #db5c25;
+    color: #000839;
 }
 
 .action_btn:active{
@@ -201,36 +201,50 @@ a:hover{
 
 }
 .conatinerhero{
-    background-color:#FFA41B;
     width: 100%;
-    background-image: linear-gradient(#FFA41B, #f1a83a);
     height: 50hv;
-    border-radius:0 0 30% 30% ;
+    border-radius:0 0  30% ;
     margin-right: ;
+    box-shadow:10px 10px 40px #d8950f;
+    
+    background-image: linear-gradient(#08163b, #005082aa);
 }
 
 .hero{
+    padding: 20px;
+    padding-bottom: 30px;
+
+    background-image: url("pic/jjlogo-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x:90% ;
+    background-position-y: 0 ;
     width: 100%;
     border-radius: 60px;
     margin-top: 40px;
     display: grid;
     grid-row: 1fr 1fr ;
-    grid-template-columns: 60% 40% ;
    
     
 }
 .aboutme{
+    background-color: #00083984;
+    border-radius: 0 0  40px 0;
+    box-shadow: 20px 20px 20px  #040616;
+   width: 500px;
+    overflow: hidden;
     margin-top: 0;
     margin-left: 80px;
-    width: 500px;
     height: 200px;
     grid-area: 2/1/3/2;
     margin-bottom: 60px;
     font-size: 1rem;
     font-family:cursive;
-    padding: 20px;
-    margin-top: 30px ;
-    
+    padding: 8px;
+    padding-right: 20px;
+    margin-top: 0px ;
+    color: #fff;
+
 }
 
 @media (min-width:900px){
@@ -244,24 +258,16 @@ a:hover{
 
 
 
-.abouttasneem{
-    display: flex;
-    align-self: center;
+
+#major{
+    color: #d8950f;
     font-family: cursive;
-    font-weight: bold;
-    font-size: 2rem;
-    color: #000839;
-    border-radius: 40px;
-    grid-area: 1/1/2/2;
-    margin: 100px;
-    padding: 10px;
-    margin-bottom: 0px;
-   
-  
-   
+    font-size: 1.3rem;
+    
 }
+
 hr{
-    border: 3px solid wheat;
+    border: 2px solid #d47227;
 }
 .image{
 
@@ -283,67 +289,112 @@ hr{
     }
 }
 
-.whoiam{
-    
-    column-gap: 40px;
-    margin: 100px;
-    color: #fefefe;
-    height: 600px;
+
+
+/* Card */
+
+.card-list {
+    color: #f1a83a;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    overflow: hidden;
-    transition: ;
-    background-color: #fbfafb38;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 30px auto;
     padding: 20px;
-    padding-right: 70px;
-    border-radius: 20px;
-animation: back 10s infinite linear;}
-
-
-.whoiam:hover{
-    color: #f1a83a;
-}
-.col1who{
-    
-}
-.col2who{
-
+    gap: 20px;
 
 }
- 
+.card-list .card-item {
+    background: #000839;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
+}
+.card-list .card-item:hover {
+    border: 5px solid #f1a83a;
+    background-color: #1b214c;
 
-.end{
-    
+}
+.card-list .card-item img {
     width: 100%;
-    column-gap: 40px;
-    margin: 100px;
-    color: #fefefe;
-    height: 800px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    overflow: hidden;
-    transition: ;
-    background-image: linear-gradient(#fbab33 );
-    margin: 0px;
-    border-top: 10px orange solid ;
-    border-bottom: 10px orange solid ;
-
-    border-radius: 10% 10% 0% 0 ;
-animation: back 10s infinite linear;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
 }
-
-
-.end:hover{
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.card-list .developer {
+    background-color: #F7DFF5; 
+    color: #B22485;
+}   
+.card-list .skills {
+    background-color: #d1e8ff;
+    color: #2968a8;
+}
+.card-list .work {
+    background-color: #d6f8d6; 
+    color: #205c20;
+}
+.card-item h3 {
     color: #f1a83a;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
 }
-.col1end{
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #f1a83a;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+}
+.card-list .card-item:hover .arrow  {
+    background: #000;
+    color: #f1a83a; 
+}
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
+}
+
+
+
+.personalinf{
+    margin-left: 60px;
+    width: 50%;
+    height: 300px ;
+    font-size: 2rem;
+    color: #f1a83a;
+    background-color: #fff;
     
 }
-.col2end{
-    display: none;
+.listinf{
+    grid-area: 1/2/9/3;
+    list-style-type: circle;
+    color: orange;
 
 
 }
-
