@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 * { 
     margin: 0;
     padding: 0;
@@ -347,7 +350,7 @@ hr{
     color: #205c20;
 }
 .card-item h3 {
-    color: #f1a83a;
+    color: #fff;
     font-size: 1.438rem;
     margin-top: 28px;
     font-weight: 600;
@@ -359,16 +362,14 @@ hr{
     transform: rotate(-35deg);
     height: 40px;
     width: 40px;
-    color: #f1a83a;
+    color: #fff;
     border: 1px solid #000;
     border-radius: 50%;
     margin-top: 40px;
     transition: 0.2s ease;
 }
-.card-list .card-item:hover .arrow  {
-    background: #000;
-    color: #f1a83a; 
-}
+
+
 @media (max-width: 1200px) {
     .card-list .card-item {
         padding: 15px;
@@ -380,21 +381,164 @@ hr{
     }
 }
 
-
-
-.personalinf{
-    margin-left: 60px;
-    width: 50%;
-    height: 300px ;
-    font-size: 2rem;
-    color: #f1a83a;
-    background-color: #fff;
+.listinf:hover{
+    
     
 }
-.listinf{
-    grid-area: 1/2/9/3;
-    list-style-type: circle;
-    color: orange;
 
+
+
+
+.containerlist{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+.listinf{ 
+    border-radius: 20px;
+  font-family: 'Space Mono', monospace; 
+  display: flex;
+  flex-direction: column;
+  max-width: max-content;
+  padding: 32px;
+  margin: 40px ;
+  border: 1px solid ;
+  box-shadow: 0px 12px 24px #030201;
+  list-style-type: circle;
+  transition: 0.2s ease;
+ 
 
 }
+.listname{
+    font-size: 2rem;
+    color: #f7f6f5;
+    padding: 10px;
+    animation: ;
+}
+
+
+ol { padding-left: 50px; }
+.listc { 
+    
+  color: #fdfdfd; 
+  padding-left: 16px;
+  margin-top: 24px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  
+  &:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute; 
+    top: -12px;
+    left: -46px;
+  }
+}
+
+strong { color: #d7d4d4; }
+
+
+
+
+
+
+/* skill */
+.skill {
+  --color: rgb(255, 255, 255);
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: "Jura", sans-serif;
+  color: var(--color);
+  background: var(--bgColor);
+}
+
+h1 {
+  text-align: center;
+}
+
+.ulsill {
+  width: min(60rem, 90%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.ulsill .liskill {
+  max-width: 12rem;
+  justify-self: center;
+  display: grid;
+  grid-template:
+    "icon"
+    "line"
+    "dot"
+    "title"
+    "descr" 1fr;
+  justify-items: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.ulsill .liskill .icon {
+  grid-area: icon;
+  width: 6rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 2.5rem;
+  border: 0.4rem solid var(--bgColor);
+  border-radius: 50%;
+  background: var(--accent-color);
+  box-shadow: -0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.45),
+    inset -0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.45);
+}
+
+.ulsill .liskill::before {
+  content: "";
+  grid-area: line;
+  height: 2rem;
+  border-right: 2px dotted currentColor;
+}
+
+.ulsill .liskill::after {
+  content: "";
+  grid-area: dot;
+  width: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--accent-color);
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+
+.ulsill .liskill .title {
+  grid-area: title;
+  margin-block: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.credits {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.credits a {
+  color: var(--color);
+}
+
+/* skill */
