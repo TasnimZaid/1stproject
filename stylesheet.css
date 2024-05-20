@@ -398,6 +398,9 @@ hr{
     display: flex;
     justify-content: center;
     height: fit-content;
+    min-width: min-content;
+    height: fit-content;
+    
 }
 
 .listinf{ 
@@ -409,9 +412,12 @@ hr{
   padding: 32px;
   margin: 40px ;
   border: 1px solid ;
-  box-shadow: 0px 12px 24px #030201;
+  box-shadow: 0px 12px 24px #6c4116;
   list-style-type: circle;
   transition: 0.2s ease;
+  background-image: linear-gradient(#111033 , #2a1e684b);
+  max-height: min-content;
+  
  
 
 }
@@ -436,7 +442,6 @@ ol { padding-left: 50px; }
   position: relative;
   font-size: 16px;
   line-height: 20px;
-  
   &:before {
     content: '';
     display: block;
@@ -448,6 +453,7 @@ ol { padding-left: 50px; }
     top: -12px;
     left: -46px;
   }
+
 }
 
 strong { color: #d7d4d4; }
@@ -516,7 +522,6 @@ h1 {
 
 .ulsill .liskill::before {
   content: "";
-  grid-area: line;
   height: 2rem;
   border-right: 2px dotted currentColor;
 }
@@ -787,5 +792,80 @@ textarea {
         text-align:center;
     }
 }
-/* part1  */
+
+.conatinerheroedu{
+    margin: 30px;
+    height: 500px;
+    margin-right: ;
+    box-shadow:10px 10px 40px #000000;
+    background-image: url(pic/University-of-Jordan-logo--removebg-preview.png) ,url(pic/orange1-removebg-preview.png)   ;
+    background-repeat: no-repeat;
+    background-position-x: 90% ,85%;
+    background-position-y: 0, 300px;
+    background-size: auto , 300px;
+    overflow: hidden;
+    border-radius: 20px ;
+    
+    
+
+}
+
+
+.education{
+   
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x:90% ;
+    background-position-y: 20% ;
+    width: 900px;
+    margin-top: 0;
+    
+    height: 200px;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    font-family:;
+    padding: 8px;
+    padding-right: 20px;
+    margin-top: 0px ;
+    color: #fff;
+    font-size: 1rem;
+    padding: 20px;
+
+}
+.conatinerheroedu:hover{
+    background-color: #000839b9;
+}
+
+#majoredu{
+    color: #f1a83a; 
+    font-size: 1.3rem;
+    padding: 20px;
+}
+#majoreduo{
+    margin: 20px;
+    padding-top: 30px;
+    margin-top: 30px;
+    color: #f1a83a; 
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+
+
+.edu1{
+    padding: 50px;
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 2.3rem;
+    
+}
+
+footer{
+    
+    background-color: #c9cad3;
+    margin-top: 0;
+    margin-bottom: 0; 
+    width: 100%;   
+}
+
 
